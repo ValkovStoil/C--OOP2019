@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "aVgOzu0G24PE+AnZfbv0bXEc9IWA2a1XW6GzBcjR3vJjkhGgA3/2KpGjOQsyb/YYOxVqGj86mTpvY27dmDdDtw==",
+  "success": true,
+  "projectFilePath": "C:\\Programing\\C--OOP2019\\WorkingWithAbstractionLab\\PointInRectangle\\PointInRectangle.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
