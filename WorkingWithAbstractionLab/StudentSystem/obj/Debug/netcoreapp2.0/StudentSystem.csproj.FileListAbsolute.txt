@@ -1,0 +1,12 @@
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\bin\Debug\netcoreapp2.0\StudentSystem.deps.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\bin\Debug\netcoreapp2.0\StudentSystem.runtimeconfig.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\bin\Debug\netcoreapp2.0\StudentSystem.runtimeconfig.dev.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\bin\Debug\netcoreapp2.0\StudentSystem.dll
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\bin\Debug\netcoreapp2.0\StudentSystem.pdb
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\obj\Debug\netcoreapp2.0\StudentSystem.csprojAssemblyReference.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\obj\Debug\netcoreapp2.0\StudentSystem.csproj.CoreCompileInputs.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\obj\Debug\netcoreapp2.0\StudentSystem.AssemblyInfoInputs.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\obj\Debug\netcoreapp2.0\StudentSystem.AssemblyInfo.cs
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\obj\Debug\netcoreapp2.0\StudentSystem.dll
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\obj\Debug\netcoreapp2.0\StudentSystem.pdb
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\StudentSystem\obj\Debug\netcoreapp2.0\StudentSystem.genruntimeconfig.cache
