@@ -1,0 +1,13 @@
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\bin\Debug\netcoreapp3.1\RhombusOfStars.exe
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\bin\Debug\netcoreapp3.1\RhombusOfStars.deps.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\bin\Debug\netcoreapp3.1\RhombusOfStars.runtimeconfig.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\bin\Debug\netcoreapp3.1\RhombusOfStars.runtimeconfig.dev.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\bin\Debug\netcoreapp3.1\RhombusOfStars.dll
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\bin\Debug\netcoreapp3.1\RhombusOfStars.pdb
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\obj\Debug\netcoreapp3.1\RhombusOfStars.csprojAssemblyReference.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\obj\Debug\netcoreapp3.1\RhombusOfStars.csproj.CoreCompileInputs.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\obj\Debug\netcoreapp3.1\RhombusOfStars.AssemblyInfoInputs.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\obj\Debug\netcoreapp3.1\RhombusOfStars.AssemblyInfo.cs
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\obj\Debug\netcoreapp3.1\RhombusOfStars.dll
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\obj\Debug\netcoreapp3.1\RhombusOfStars.pdb
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\RhombusOfStars\obj\Debug\netcoreapp3.1\RhombusOfStars.genruntimeconfig.cache
