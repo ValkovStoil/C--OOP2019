@@ -1,0 +1,12 @@
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\bin\Debug\netcoreapp2.0\CarsSalesman.deps.json
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\bin\Debug\netcoreapp2.0\CarsSalesman.runtimeconfig.json
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\bin\Debug\netcoreapp2.0\CarsSalesman.runtimeconfig.dev.json
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\bin\Debug\netcoreapp2.0\CarsSalesman.dll
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\bin\Debug\netcoreapp2.0\CarsSalesman.pdb
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\obj\Debug\netcoreapp2.0\CarsSalesman.csprojAssemblyReference.cache
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\obj\Debug\netcoreapp2.0\CarsSalesman.csproj.CoreCompileInputs.cache
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\obj\Debug\netcoreapp2.0\CarsSalesman.AssemblyInfoInputs.cache
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\obj\Debug\netcoreapp2.0\CarsSalesman.AssemblyInfo.cs
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\obj\Debug\netcoreapp2.0\CarsSalesman.dll
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\obj\Debug\netcoreapp2.0\CarsSalesman.pdb
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\CarsSalesman\obj\Debug\netcoreapp2.0\CarsSalesman.genruntimeconfig.cache
