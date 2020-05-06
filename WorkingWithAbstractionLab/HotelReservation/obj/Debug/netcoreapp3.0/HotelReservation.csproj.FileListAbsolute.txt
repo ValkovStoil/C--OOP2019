@@ -1,0 +1,13 @@
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\bin\Debug\netcoreapp3.0\HotelReservation.exe
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\bin\Debug\netcoreapp3.0\HotelReservation.deps.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\bin\Debug\netcoreapp3.0\HotelReservation.runtimeconfig.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\bin\Debug\netcoreapp3.0\HotelReservation.runtimeconfig.dev.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\bin\Debug\netcoreapp3.0\HotelReservation.dll
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\bin\Debug\netcoreapp3.0\HotelReservation.pdb
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\obj\Debug\netcoreapp3.0\HotelReservation.csprojAssemblyReference.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\obj\Debug\netcoreapp3.0\HotelReservation.csproj.CoreCompileInputs.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\obj\Debug\netcoreapp3.0\HotelReservation.AssemblyInfoInputs.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\obj\Debug\netcoreapp3.0\HotelReservation.AssemblyInfo.cs
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\obj\Debug\netcoreapp3.0\HotelReservation.dll
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\obj\Debug\netcoreapp3.0\HotelReservation.pdb
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\HotelReservation\obj\Debug\netcoreapp3.0\HotelReservation.genruntimeconfig.cache

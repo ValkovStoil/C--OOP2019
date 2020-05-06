@@ -1,0 +1,13 @@
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\bin\Debug\netcoreapp3.0\PointInRectangle.exe
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\bin\Debug\netcoreapp3.0\PointInRectangle.deps.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\bin\Debug\netcoreapp3.0\PointInRectangle.runtimeconfig.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\bin\Debug\netcoreapp3.0\PointInRectangle.runtimeconfig.dev.json
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\bin\Debug\netcoreapp3.0\PointInRectangle.dll
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\bin\Debug\netcoreapp3.0\PointInRectangle.pdb
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\obj\Debug\netcoreapp3.0\PointInRectangle.csprojAssemblyReference.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\obj\Debug\netcoreapp3.0\PointInRectangle.csproj.CoreCompileInputs.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\obj\Debug\netcoreapp3.0\PointInRectangle.AssemblyInfoInputs.cache
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\obj\Debug\netcoreapp3.0\PointInRectangle.AssemblyInfo.cs
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\obj\Debug\netcoreapp3.0\PointInRectangle.dll
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\obj\Debug\netcoreapp3.0\PointInRectangle.pdb
+C:\Programing\C--OOP2019\WorkingWithAbstractionLab\PointInRectangle\obj\Debug\netcoreapp3.0\PointInRectangle.genruntimeconfig.cache
