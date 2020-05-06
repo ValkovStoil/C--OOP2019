@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "TY5ADyjjwjXfIxvVlpEE2hKkL6NGUjbIIyqRTBKtO7HBdB2dTCtoZa84wapoCjjr2WzmHBLzDXy3LT7oFa10/w==",
+  "success": true,
+  "projectFilePath": "C:\\Programing\\C--OOP2019\\ExercisesWorkingWithAbstraction\\RawData\\RawData.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

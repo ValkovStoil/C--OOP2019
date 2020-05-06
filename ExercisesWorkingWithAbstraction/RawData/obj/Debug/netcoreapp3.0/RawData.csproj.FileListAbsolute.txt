@@ -1,0 +1,13 @@
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\bin\Debug\netcoreapp3.0\RawData.exe
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\bin\Debug\netcoreapp3.0\RawData.deps.json
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\bin\Debug\netcoreapp3.0\RawData.runtimeconfig.json
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\bin\Debug\netcoreapp3.0\RawData.runtimeconfig.dev.json
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\bin\Debug\netcoreapp3.0\RawData.dll
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\bin\Debug\netcoreapp3.0\RawData.pdb
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\obj\Debug\netcoreapp3.0\RawData.csprojAssemblyReference.cache
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\obj\Debug\netcoreapp3.0\RawData.csproj.CoreCompileInputs.cache
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\obj\Debug\netcoreapp3.0\RawData.AssemblyInfoInputs.cache
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\obj\Debug\netcoreapp3.0\RawData.AssemblyInfo.cs
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\obj\Debug\netcoreapp3.0\RawData.dll
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\obj\Debug\netcoreapp3.0\RawData.pdb
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\RawData\obj\Debug\netcoreapp3.0\RawData.genruntimeconfig.cache
