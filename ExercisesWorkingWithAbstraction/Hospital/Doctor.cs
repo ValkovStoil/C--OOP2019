@@ -1,6 +1,8 @@
 ﻿namespace Hospital
 {
     using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
 
     public class Doctor
     {
@@ -12,11 +14,30 @@
             this.firstName = firstName;
             this.lastName = lastName;
             this.FullName = $"{this.firstName}{this.lastName}";
-            this.Pacients = new List<Pacient>();
+            this.Patients = new List<Patient>();
         }
 
         public string FullName { get; private set; }
 
-        public List<Pacient> Pacients { get; set; }
+        public List<Patient> Patients { get; set; }
+
+        public override string ToString()
+        {
+            var result = new StringBuilder();
+
+            var patients = this.Patients.OrderBy(x => x.Name).ToList();
+
+            foreach (var patient in patients)
+            {
+                result.AppendLine(patient.Name);
+            }
+
+            return result.ToString();
+        }
+
+        public void AddPatient(Patient patientName)
+        {
+            this.Patients.Add(patientName);
+        }
     }
 }
