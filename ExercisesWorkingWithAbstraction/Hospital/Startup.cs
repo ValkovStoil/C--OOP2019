@@ -10,7 +10,7 @@
         public static void Main()
         {
             var doctors = new List<Doctor>();
-            var departments = new Dictionary<string, List<List<string>>>();
+            var departments = new Dictionary<string, Departament>();
 
 
             string command = Console.ReadLine();
@@ -23,36 +23,25 @@
                 var patientName = commandInfo[3];
                 var fullName = firstName + lastName;
 
-                if (!doctors.Any(x=>x.FullName == fullName))
+                if (!doctors.Any(x => x.FullName == fullName))
                 {
                     var doctor = new Doctor(firstName, lastName);
                     doctors.Add(doctor);
                 }
                 if (!departments.ContainsKey(departament))
                 {
-                    departments[departament] = new List<List<string>>();
-                    for (int stai = 0; stai < 20; stai++)
-                    {
-                        departments[departament].Add(new List<string>());
-                    }
+                    departments[departament] = new Departament();
                 }
+                ;
+                var hasSpace = departments[departament].Rooms.Any(x => x.PatientsInRoom.Count < 3);
 
-                var hasSpace = departments[departament].SelectMany(x => x).Count() < 60;
                 if (hasSpace)
                 {
-                    var room = 0;
                     var patient = new Patient(patientName);
                     doctors.FirstOrDefault(x => x.FullName == fullName).AddPatient(patient);
-                    //TODO
-                    for (int st = 0; st < departments[departament].Count; st++)
-                    {
-                        if (departments[departament][st].Count < 3)
-                        {
-                            room = st;
-                            break;
-                        }
-                    }
-                    departments[departament][room].Add(patient);
+
+                    var freeBedInRoom = departments[departament].Rooms.FirstOrDefault(x => x.PatientsInRoom.Count < 3);
+                    freeBedInRoom.PatientsInRoom.Add(patient);
                 }
 
                 command = Console.ReadLine();
@@ -63,14 +52,28 @@
             while (command != "End")
             {
                 var requestInfo = command.Split();
+                var roomNumber = 0;
 
                 if (requestInfo.Length == 1)
                 {
-                    Console.WriteLine(string.Join("\n", departments[requestInfo[0]].Where(x => x.Count > 0).SelectMany(x => x)));
+                    var department = departments[requestInfo[0]];
+                    var rooms = department.Rooms;
+
+                    foreach (var room in rooms)
+                    {
+                        if (room.PatientsInRoom.Count != 0)
+                        {
+                            Console.WriteLine(string.Join(Environment.NewLine, room.PatientsInRoom));
+                        }
+                    }
+
                 }
-                else if (requestInfo.Length == 2 && int.TryParse(requestInfo[1], out int staq))
+                else if (requestInfo.Length == 2 && int.TryParse(requestInfo[1], out roomNumber))
                 {
-                    Console.WriteLine(string.Join("\n", departments[requestInfo[0]][staq - 1].OrderBy(x => x)));
+                    var department = departments[requestInfo[0]];
+                    var room = department.Rooms[roomNumber - 1];
+
+                    Console.WriteLine(string.Join("\n", room.PatientsInRoom.OrderBy(x => x.Name)));
                 }
                 else
                 {
