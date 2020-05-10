@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "bYHHHhNMRvomSufj4yjc29OIurHEuZIVEpiiM4z1yvlSAJDje+FcEvAUBARXM0Dl0r39hjzrUmS83ZMGwUKKlA==",
+  "success": true,
+  "projectFilePath": "C:\\Programing\\C--OOP2019\\ExercisesWorkingWithAbstraction\\GreedyTimes\\GreedyTimes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.netcore.app\\2.0.0\\microsoft.netcore.app.2.0.0.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.0\\microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.0.0\\microsoft.netcore.dotnethostpolicy.2.0.0.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.0.0\\microsoft.netcore.dotnethostresolver.2.0.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\glamr\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

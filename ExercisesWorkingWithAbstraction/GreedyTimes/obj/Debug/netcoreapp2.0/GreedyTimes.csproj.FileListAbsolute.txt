@@ -1,0 +1,12 @@
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\bin\Debug\netcoreapp2.0\GreedyTimes.deps.json
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\bin\Debug\netcoreapp2.0\GreedyTimes.runtimeconfig.json
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\bin\Debug\netcoreapp2.0\GreedyTimes.runtimeconfig.dev.json
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\bin\Debug\netcoreapp2.0\GreedyTimes.dll
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\bin\Debug\netcoreapp2.0\GreedyTimes.pdb
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\obj\Debug\netcoreapp2.0\GreedyTimes.csprojAssemblyReference.cache
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\obj\Debug\netcoreapp2.0\GreedyTimes.csproj.CoreCompileInputs.cache
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\obj\Debug\netcoreapp2.0\GreedyTimes.AssemblyInfoInputs.cache
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\obj\Debug\netcoreapp2.0\GreedyTimes.AssemblyInfo.cs
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\obj\Debug\netcoreapp2.0\GreedyTimes.dll
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\obj\Debug\netcoreapp2.0\GreedyTimes.pdb
+C:\Programing\C--OOP2019\ExercisesWorkingWithAbstraction\GreedyTimes\obj\Debug\netcoreapp2.0\GreedyTimes.genruntimeconfig.cache
