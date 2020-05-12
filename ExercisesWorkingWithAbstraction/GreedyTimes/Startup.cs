@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Net.NetworkInformation;
 
 namespace GreedyTimes
 {
@@ -14,16 +16,16 @@ namespace GreedyTimes
                 .Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .ToArray();
 
-            var bag = new Dictionary<string, Dictionary<string, long>>();
+            var bag = new Bag(bagCapacity);
 
-            long gold = 0;
-            long gems = 0;
-            long money = 0;
+            //long gold = 0;
+            //long gems = 0;
+            //long money = 0;
             //TODO
             for (int i = 0; i < itemsQuantity.Length; i += 2)
             {
                 var name = itemsQuantity[i];
-                var count = long.Parse(itemsQuantity[i + 1]);
+                var itemPrice = long.Parse(itemsQuantity[i + 1]);
 
                 string type = string.Empty;
 
@@ -40,11 +42,13 @@ namespace GreedyTimes
                     type = "Gold";
                 }
 
+                var totalSumInBag = bag.GetSum();
+                
                 if (type == string.Empty)
                 {
                     continue;
                 }
-                else if (bagCapacity < bag.Values.Select(x => x.Values.Sum()).Sum() + count)
+                else if (bag.Capacity < totalSumInBag + itemPrice)
                 {
                     continue;
                 }
@@ -52,11 +56,13 @@ namespace GreedyTimes
                 switch (type)
                 {
                     case "Gem":
-                        if (!bag.ContainsKey(type))
+                        var gem = new Gem(name, itemPrice);
+
+                        if (!bag.Gems.Any(x=>x.Name == gem.Name))
                         {
-                            if (bag.ContainsKey("Gold"))
+                            if (bag.GouldAmount != 0)
                             {
-                                if (count > bag["Gold"].Values.Sum())
+                                if (itemPrice > bag.GouldAmount)
                                 {
                                     continue;
                                 }
@@ -66,17 +72,19 @@ namespace GreedyTimes
                                 continue;
                             }
                         }
-                        else if (bag[type].Values.Sum() + count > bag["Gold"].Values.Sum())
+                        else if (bag.Gems.Sum(x=>x.Amount) + itemPrice > bag.GouldAmount)
                         {
                             continue;
                         }
                         break;
                     case "Cash":
-                        if (!bag.ContainsKey(type))
+                        var money = new Money(name, itemPrice);
+
+                        if (!bag.Curency.Any(x=>x.Name == money.Name))
                         {
-                            if (bag.ContainsKey("Gem"))
+                            if (bag.Gems.Count != 0)
                             {
-                                if (count > bag["Gem"].Values.Sum())
+                                if (itemPrice > bag.Gems.Sum(x => x.Amount))
                                 {
                                     continue;
                                 }
@@ -86,46 +94,57 @@ namespace GreedyTimes
                                 continue;
                             }
                         }
-                        else if (bag[type].Values.Sum() + count > bag["Gem"].Values.Sum())
+                        else if (bag.GouldAmount + itemPrice > bag.Gems.Sum(x=>x.Amount))
                         {
                             continue;
                         }
                         break;
                 }
+                //TODO see the first test
 
-                if (!bag.ContainsKey(type))
-                {
-                    bag[type] = new Dictionary<string, long>();
-                }
+                //if (!bag.ContainsKey(type))
+                //{
+                //    bag[type] = new Dictionary<string, long>();
+                //}
 
-                if (!bag[type].ContainsKey(name))
-                {
-                    bag[type][name] = 0;
-                }
+                //if (!bag[type].ContainsKey(name))
+                //{
+                //    bag[type][name] = 0;
+                //}
 
-                bag[type][name] += count;
+                //bag[type][name] += itemPrice;
                 if (type == "Gold")
                 {
-                    gold += count;
+                    bag.GouldAmount += itemPrice;
                 }
                 else if (type == "Gem")
                 {
-                    gems += count;
+                    var gem = new Gem(name, itemPrice);
+
+                    if (bag.Gems.Any(x => x.Name == name))
+                    {
+                        bag.Gems.First(x => x.Name == name).Amount += itemPrice;
+                    }
+                    else
+                    {
+                        bag.Gems.Add(gem);
+                    }
                 }
                 else if (type == "Cash")
                 {
-                    money += count;
+                    var money = new Money(name, itemPrice);
+                    if (bag.Curency.Any(x => x.Name == name))
+                    {
+                        bag.Curency.First(x => x.Name == name).Amount += itemPrice;
+                    }
+                    else
+                    {
+                        bag.Curency.Add(money);
+                    }
                 }
             }
 
-            foreach (var x in bag)
-            {
-                Console.WriteLine($"<{x.Key}> ${x.Value.Values.Sum()}");
-                foreach (var item2 in x.Value.OrderByDescending(y => y.Key).ThenBy(y => y.Value))
-                {
-                    Console.WriteLine($"##{item2.Key} - {item2.Value}");
-                }
-            }
+            Console.WriteLine(bag);
         }
     }
 }

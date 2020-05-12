@@ -1,4 +1,6 @@
-﻿namespace GreedyTimes
+﻿using System.Text;
+
+namespace GreedyTimes
 {
     public class Gem
     {
@@ -11,5 +13,6 @@
         public string Name { get; set; }
 
         public long Amount { get; set; }
+
     }
 }
