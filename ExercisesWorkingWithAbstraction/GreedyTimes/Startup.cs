@@ -43,7 +43,7 @@ namespace GreedyTimes
                 }
 
                 var totalSumInBag = bag.GetSum();
-                
+
                 if (type == string.Empty)
                 {
                     continue;
@@ -58,7 +58,7 @@ namespace GreedyTimes
                     case "Gem":
                         var gem = new Gem(name, itemPrice);
 
-                        if (!bag.Gems.Any(x=>x.Name == gem.Name))
+                        if (!bag.Gems.Any(x => x.Name == gem.Name))
                         {
                             if (bag.GouldAmount != 0)
                             {
@@ -72,7 +72,7 @@ namespace GreedyTimes
                                 continue;
                             }
                         }
-                        else if (bag.Gems.Sum(x=>x.Amount) + itemPrice > bag.GouldAmount)
+                        else if (bag.Gems.Sum(x => x.Amount) + itemPrice > bag.GouldAmount)
                         {
                             continue;
                         }
@@ -80,7 +80,7 @@ namespace GreedyTimes
                     case "Cash":
                         var money = new Money(name, itemPrice);
 
-                        if (!bag.Curency.Any(x=>x.Name == money.Name))
+                        if (!bag.Curency.Any(x => x.Name == money.Name))
                         {
                             if (bag.Gems.Count != 0)
                             {
@@ -94,57 +94,62 @@ namespace GreedyTimes
                                 continue;
                             }
                         }
-                        else if (bag.GouldAmount + itemPrice > bag.Gems.Sum(x=>x.Amount))
+                        else if (bag.GouldAmount + itemPrice > bag.Gems.Sum(x => x.Amount))
                         {
                             continue;
                         }
                         break;
                 }
-                //TODO see the first test
 
-                //if (!bag.ContainsKey(type))
-                //{
-                //    bag[type] = new Dictionary<string, long>();
-                //}
+                AdddToBag(bag, name, itemPrice, type);
+            }
 
-                //if (!bag[type].ContainsKey(name))
-                //{
-                //    bag[type][name] = 0;
-                //}
+            Console.WriteLine(bag);
+        }
 
-                //bag[type][name] += itemPrice;
-                if (type == "Gold")
+        private static void AdddToBag(Bag bag, string name, long itemPrice, string type)
+        {
+            if (type == "Gold")
+            {
+                bag.GouldAmount += itemPrice;
+            }
+            else if (type == "Gem")
+            {
+                var gem = new Gem(name, itemPrice);
+
+                if (bag.Gems.Any(x => x.Name == name))
                 {
-                    bag.GouldAmount += itemPrice;
-                }
-                else if (type == "Gem")
-                {
-                    var gem = new Gem(name, itemPrice);
-
-                    if (bag.Gems.Any(x => x.Name == name))
+                    if (bag.GouldAmount >= bag.Gems.Sum(x => x.Amount) + itemPrice)
                     {
                         bag.Gems.First(x => x.Name == name).Amount += itemPrice;
                     }
-                    else
+                }
+                else
+                {
+                    if (bag.GouldAmount >= bag.Gems.Sum(x => x.Amount) + itemPrice)
                     {
                         bag.Gems.Add(gem);
                     }
                 }
-                else if (type == "Cash")
+            }
+            else if (type == "Cash")
+            {
+                var money = new Money(name, itemPrice);
+                if (bag.Curency.Any(x => x.Name == name))
                 {
-                    var money = new Money(name, itemPrice);
-                    if (bag.Curency.Any(x => x.Name == name))
+                    if (bag.Gems.Sum(x => x.Amount) >= bag.Curency.Sum(x => x.Amount) + itemPrice)
                     {
                         bag.Curency.First(x => x.Name == name).Amount += itemPrice;
                     }
-                    else
+                }
+                else
+                {
+                    if (bag.Gems.Sum(x => x.Amount) >= bag.Curency.Sum(x => x.Amount) + itemPrice)
                     {
                         bag.Curency.Add(money);
                     }
                 }
             }
-
-            Console.WriteLine(bag);
         }
     }
 }
