@@ -1,18 +1,12 @@
-﻿using System.Text;
-
-namespace GreedyTimes
+﻿namespace GreedyTimes
 {
-    public class Gem
+    public class Gem :Item
     {
-        public Gem(string name, long amount)
+        public Gem(string key, long value)
         {
-           this.Name = name;
-           this.Amount = amount;
+           this.Key = key;
+           this.Value = value;
         }
-
-        public string Name { get; set; }
-
-        public long Amount { get; set; }
 
     }
 }

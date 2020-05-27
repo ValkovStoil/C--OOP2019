@@ -1,72 +1,143 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace GreedyTimes
+﻿namespace GreedyTimes
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
     public class Bag
     {
+        private List<Item> bag;
+        private long capacity;
+        private long current;
+
         public Bag(long capacity)
         {
-            this.Capacity = capacity;
-            this.GouldAmount = 0;
-            this.Gems = new List<Gem>();
-            this.Curency = new List<Money>(); ;
+            this.capacity = capacity;
+            this.bag = new List<Item>();
         }
 
-        public long Capacity { get; set; }
-
-        public long GouldAmount { get; set; }
-
-        public List<Gem> Gems { get; set; }
-
-        public List<Money> Curency { get; set; }
-
-        public long GetSum()
+        public long GoldItemsValue
         {
-            var totalSum = this.Gems.Sum(x => x.Amount) + this.Curency.Sum(x => x.Amount);
+            get
+            {
+                return bag.Where(i => i is Gold).Sum(i => i.Value);
+            }
+        }
 
-            return totalSum;
+        public long CashItemsValue
+        {
+            get
+            {
+                return bag.Where(i => i is Cash).Sum(i => i.Value);
+            }
+        }
+
+        public long GemItemsValue
+        {
+            get
+            {
+                return bag.Where(i => i is Gem).Sum(i => i.Value);
+            }
+        }
+
+        public void AddGoldItem(Gold item)
+        {
+            if(capacity >= current + item.Value)
+            {
+                var goldItem = GetGoldItem();
+                if(goldItem.Any(gi=>gi.Key == item.Key))
+                {
+                    goldItem.Single(gi => gi.Key == item.Key).IncreaseValue(item.Value);
+                }
+                else
+                {
+                    bag.Add(item);
+                }
+
+                current += item.Value;
+            }
+        }
+
+        public void AddCashItem(Cash item)
+        {
+            if (capacity >= current + item.Value && GemItemsValue >= CashItemsValue + item.Value)
+            {
+                var cashItem = GetCashItem();
+                if (cashItem.Any(gi => gi.Key == item.Key))
+                {
+                    cashItem.Single(gi => gi.Key == item.Key).IncreaseValue(item.Value);
+                }
+                else
+                {
+                    bag.Add(item);
+                }
+
+                current += item.Value;
+            }
+        }
+
+        public void AddGemItem(Gem item)
+        {
+            if (capacity >= current + item.Value && GoldItemsValue >= GemItemsValue + item.Value)
+            {
+                var gemItem = GetGemItem();
+                if (gemItem.Any(gi => gi.Key == item.Key))
+                {
+                    gemItem.Single(gi => gi.Key == item.Key).IncreaseValue(item.Value);
+                }
+                else
+                {
+                    bag.Add(item);
+                }
+
+                current += item.Value;
+            }
+        }
+
+        private List<Item> GetGemItem()
+        {
+            return bag.Where(i => i is Gem).ToList();
+        }
+
+        private List<Item> GetCashItem()
+        {
+            return bag.Where(i => i is Cash).ToList();
+        }
+
+        private List<Item> GetGoldItem()
+        {
+            return bag.Where(i => i is Gold).ToList();
         }
 
         public override string ToString()
         {
-            var result = new StringBuilder();
+            var outputInfo = new StringBuilder();
 
-            if(this.GouldAmount != 0)
+            var dictionary = bag.GroupBy(i => i.GetType().Name).ToDictionary(g => g.Key, g => g.ToList());
+
+            foreach (var kvp in dictionary.OrderByDescending(kv => kv.Value.Sum(i => i.Value)))
             {
-                result.AppendLine($"<Gold> ${this.GouldAmount}");
-                result.AppendLine($"##Gold - {this.GouldAmount}");
-            }
-
-            if(this.Gems.Count!= 0)
-            {
-                var gems = this.Gems
-                    .OrderByDescending(x => x.Name)
-                    .ThenBy(x => x.Amount);
-
-                result.AppendLine($"<Gem> ${this.Gems.Sum(x => x.Amount)}");
-                foreach (var gem in gems)
+                if (kvp.Key == "Cash")
                 {
-                    result.AppendLine($"##{gem.Name} - {gem.Amount}");
+                    outputInfo.AppendLine($"<Cash> ${kvp.Value.Sum(i => i.Value)}");
+                }
+                else if (kvp.Key == "Gold")
+                {
+                    outputInfo.AppendLine($"<Gold> ${kvp.Value.Sum(i => i.Value)}");
+                }
+                else if (kvp.Key == "Gem")
+                {
+                    outputInfo.AppendLine($"<Gem> ${kvp.Value.Sum(i => i.Value)}");
+                }
+
+                foreach (var item in kvp.Value.OrderByDescending(i=> i.Key).ThenBy(i=> i.Value))
+                {
+                    outputInfo.AppendLine($"##{item.Key} - {item.Value}");
                 }
             }
 
-            if(this.Curency.Count != 0)
-            {
-                var money = this.Curency
-                    .OrderByDescending(x => x.Name)
-                    .ThenBy(x => x.Amount);
-
-                result.AppendLine($"<Gem> ${this.Curency.Sum(x => x.Amount)}");
-                foreach (var curency in money)
-                {
-                    result.AppendLine($"##{curency.Name} - {curency.Amount}");
-                }
-            }
-
-            return result.ToString();
+            return outputInfo.ToString().TrimEnd();
         }
-
     }
 }
